@@ -1,2 +1,2 @@
-# document-site-using-vuepress
+# Document site using Vuepress
 Document site using vuepress
