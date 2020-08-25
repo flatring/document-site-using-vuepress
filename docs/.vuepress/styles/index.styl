@@ -1,0 +1,56 @@
+.theme-default-content:not(.custom) {
+  max-width: initial;
+
+  h1 {
+    counter-reset: h2cnt;
+  }
+  h2 {
+    conter-increment: h2cnt;
+    conter-reset: h3cnt;
+    border-bottom: 3px solid #ccc;
+  }
+  h3 {
+    conter-increment: h3cnt;
+    conter-reset: h4cnt;
+    border-bottom: 2px solid #ccc;
+  }
+  h4 {
+    conter-increment: h4cnt;
+    conter-reset: h5cnt;
+    border-bottom: 1px solid #ccc;
+  }
+  h5 {
+    conter-increment: h5cnt;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  h2:before {
+    content: counter(h2cnt) ". ";
+  }
+  h3:before {
+    content: counter(h2cnt) ". " counter(h3cnt) ". ";
+  }
+  h4:before {
+    content: counter(h2cnt) ". " counter(h3cnt) ". " counter(h4cnt) ". ";
+  }
+  h5:before {
+    content: counter(h2cnt) ". " counter(h3cnt) ". " counter(h4cnt) ". " counter(h5cnt) ". ";
+  }
+}
+
+.sidbar-group {
+  ul {
+    counter-reset: cnt;
+  }
+  li a::before {
+    content: counters(cnt, ".") ". ";
+    counter-increment: cnt;
+  }
+}
+
+body
+  font-mafily "Noto Sans JP', sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  font-size 17px
+  color $textColor

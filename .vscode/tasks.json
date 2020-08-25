@@ -1,0 +1,14 @@
+{
+  "versioin": "2.0.0",
+  "tasks": [
+    {
+      "label": "yarn run docs:dev",
+      "type": "shell",
+      "command": "yarn run docs:dev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
