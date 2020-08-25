@@ -25,12 +25,12 @@
 </template>
 
 <script>
-export default{
+export default {
   computed: {
     tags() {
       let tags = {}
       for (let page of this.$site.pages) {
-        for (let index of page.frontmatter.tags) {
+        for (let index in page.frontmatter.tags) {
           const tag = page.frontmatter.tags[index]
           if (tag in tags) {
             tags[tag].push(page)

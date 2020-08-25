@@ -7,7 +7,7 @@
       width="238"
       height="18"
       preserveAspectRatio="none"
-      vieBox="0 0 238 18"
+      viewBox="0 0 238 18"
     >
       <desc>Color Sample</desc>
       <rect x="1" y="1" width="16" height="16" rx="3" stroke="black" stroke-width="2" :fill="color" />

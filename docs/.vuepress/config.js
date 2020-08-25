@@ -1,21 +1,21 @@
 module.exports = {
-  domain: 'https://github.com/mypage/',
-  repo: 'https://github.com/mypage/reposiroty.git',
+  domain: 'https://github.com/flatring/document-site-using-vuepress/',
+  repo: 'https://github.com/flatring/document-site-using-vuepress.git',
   base: '/document/',
   dest: 'public',
   head: [
     [
       'link',
-      { rel: 'icon', type: 'image/png', href: '/image.png' }
+      { rel: 'icon', type: 'image/png', href: '/document.png' }
     ],
     [
       'link',
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?familly=Noto+Sans+JP' }
     ],
   ],
   themeConfig: {
     nav: [
-      { text: 'GitHub', link: 'https://github.com/mypage/' }
+      { text: 'GitHub', link: 'https://github.com/flatring/document-site-using-vuepress' }
     ],
     sidebar: 'auto',
     sidebarDepth: 2, // max=2
@@ -33,7 +33,7 @@ module.exports = {
   markdown: {
     lineNumbers: true,
     extendMarkdown: md => {
-      md.set({ typegrapher: true }),
+      md.set({ typographer: true }),
       md.use(require('markdown-it-footnote')),
       md.use(require('markdown-it-imsize'), { autofill: true }),
       md.use(require('markdown-it-plantuml')),
@@ -42,8 +42,8 @@ module.exports = {
   },
   plugins: [
     ['@dovyp/vuepress-plugin-clipboard-copy', true],
-    ['@vuepress/plugin-back-to-top'],
-    ['@vuepress/plugin-nprogress'],
+    ['@vuepress/back-to-top'],
+    ['@vuepress/nprogress'],
     [
       'vuepress-plugin-zooming',
       {
