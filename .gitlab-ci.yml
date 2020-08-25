@@ -1,0 +1,20 @@
+pages:
+  # DockerHub - node
+  #   https://hub.docker.com/_/node
+  #   LTS as of 2020/08/21 is 12.18.3
+  images: node:lts
+  cache:
+    key: "$CI_JOB_NAME-$CI_COMMIT_REF_SLUG"
+    paths:
+      - node_modules/
+  tags:
+    - groupNodeLts
+  before_scripts:
+    yarn install
+  script:
+    - yarn run docs:build
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
