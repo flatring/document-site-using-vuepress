@@ -7,6 +7,9 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
+  "dependencies": {
+    "vue-good-table": "^2.21.0"
+  },
   "devDependencies": {
     "@dovyp/vuepress-plugin-clipboard-copy": "^1.0.0-alpha.7",
     "@vuepress/plugin-back-to-top": "^1.5.3",

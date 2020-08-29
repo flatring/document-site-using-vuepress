@@ -9,12 +9,18 @@
 1. `master`
 
 ## 定義 - Definition
-| Physical name | Logical name | Type    | Digit | Not Null | Default value | Description     |
-| ------------- | ------------ | ------- | ----: | :------: | ------------- | --------------- |
-| id            | id           | int     |     - |   True   |               |                 |
-| name          | 名前         | string  |    50 |   True   |               |                 |
-| email         | Eメール      | string  |   100 |   True   |               |                 |
-| gender        | 性別         | tinyint |     - |   True   |               | [性別](#性別-gender) |
+### markdownのtableの場合 
+
+| Physical name | Logical name | Type    | Digit | Not Null | Default value | Description                 |
+| ------------- | ------------ | ------- | ----: | :------: | ------------- | --------------------------- |
+| id            | id           | int     |     - |   True   |               | Primary key. auto increment |
+| password      | パスワード   | string  |    30 |   True   | `qwerty12345` | crypt                       |
+| name          | 名前         | string  |   100 |   True   |               |                             |
+| email         | Eメール      | string  |   100 |   True   |               |                             |
+| gender        | 性別         | tinyint |     - |   True   |               | [性別](#性別-gender)        |
+
+### vue-good-tableの場合
+<TableGrid />
 
 ### 性別 - gender
 - `0`: 男性

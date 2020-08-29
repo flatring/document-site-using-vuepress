@@ -10,7 +10,7 @@ module.exports = {
     ],
     [
       'link',
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?familly=Noto+Sans+JP' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP' }
     ],
   ],
   themeConfig: {
@@ -26,7 +26,7 @@ module.exports = {
     // default
     '/': {
       lang: 'ja',
-      title: 'document',
+      title: 'Document',
       description: 'Document'
     }
   },
@@ -53,6 +53,6 @@ module.exports = {
           zIndex: 10000,
         }
       }
-    ]
+    ],
   ]
 }
