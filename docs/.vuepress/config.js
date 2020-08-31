@@ -1,7 +1,7 @@
 module.exports = {
-  domain: 'https://github.com/flatring/document-site-using-vuepress/',
-  repo: 'https://github.com/flatring/document-site-using-vuepress.git',
-  base: '/document/',
+  // domain: 'https://github.com/flatring/document-site-using-vuepress/',
+  // repo: 'https://github.com/flatring/document-site-using-vuepress.git',
+  base: '/document-site-using-vuepress/',
   dest: 'public',
   head: [
     [

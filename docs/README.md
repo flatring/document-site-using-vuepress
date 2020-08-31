@@ -5,7 +5,7 @@ home: true
  1. Document site using vuepress
 
 ## 開発者向け - Development
-1. [ドキュメント編集手順](development/document_editing_procedure.md)
+1. [ドキュメント編集手順](./development/document_editing_procedure.md)
 1. 規約
     1. 全般
     1. markdown
@@ -32,8 +32,8 @@ home: true
 
 ### 内部 - Internal
 1. ER図
-    1. [サンプル](internal/er/sample.md)
-1. [テーブル一覧](internal/list_tables.md)
+    1. [サンプル](./internal/er/sample.md)
+1. [テーブル一覧](./internal/list_tables.md)
 1. 画面一覧
 
 ## 【Tag List】

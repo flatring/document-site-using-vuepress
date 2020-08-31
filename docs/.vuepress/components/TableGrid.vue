@@ -4,6 +4,7 @@
       :columns="columns"
       :rows=getRows()
       :line-numbers="true"
+      :sort-options="{ enabled: false }"
       styleClass="vgt-table condensed"
     />
   </div>
