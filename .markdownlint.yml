@@ -8,9 +8,10 @@ MD024:          # 章タイトルの直服禁止
 MD031: false    # コードブロックの最後の空白判定なし
 MD032: false    # リスト前後の空白判定なし
 MD033:          # 指定したhtmlタグ以外は利用禁止
-  allowd_elements:
+  allowed_elements:
     - br
     - ColorSample
+    - GreenBadge
     - span
     - TagList
 MD038: false    # コードブロック内にスペース可
