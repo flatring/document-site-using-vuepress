@@ -1,17 +1,11 @@
 module.exports = {
-  // domain: 'https://github.com/flatring/document-site-using-vuepress/',
-  // repo: 'https://github.com/flatring/document-site-using-vuepress.git',
   base: '/document-site-using-vuepress/',
   dest: 'public',
   head: [
-    [
-      'link',
-      { rel: 'icon', type: 'image/png', href: '/document.png' }
-    ],
-    [
-      'link',
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP' }
-    ],
+    [ 'link', { rel: 'icon', type: 'image/png', href: '/document.png' } ],
+    [ 'link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP' } ],
+    [ 'meta', { name: "viewport", content: "width=device-width,initial-scale=1" } ],
+    [ 'meta', { name: "robots", content: "noindex, follow" } ],
   ],
   themeConfig: {
     nav: [
@@ -26,8 +20,8 @@ module.exports = {
     // default
     '/': {
       lang: 'ja',
-      title: 'Document',
-      description: 'Document'
+      title: 'Sample documentation site',
+      description: 'Document site using VuePress'
     }
   },
   markdown: {
