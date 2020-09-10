@@ -15,6 +15,7 @@ home: true
 1. GitHub or GitLab 運用手順
     1. <GreenBadge text="T.B.D." />
 1. tools
+    1. [Git](./development/tools/Git.md)
     1. [Visual Studio Code](./development/tools/VisualStudioCode.md)(VSCode)
 
 ## 要件定義 - Requirement definition

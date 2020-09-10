@@ -24,13 +24,25 @@ entity "users ユーザー" as users {
   id
 }
 
-entity "user_histories ユーザー履歴" as user_histories {
+entity "tasks タスク" as tasks {
   id
-  --
-  user_id
 }
 
-users ||--|{ user_histories
+entity "tasks_comments" as tasks_comments {
+  id
+  --
+  task_id
+  comment_id
+}
+
+entity "comments コメント" as comments {
+  id
+}
+
+tasks ||--|{ tasks_comments
+tasks ||--|| users
+tasks_comments }|--|| comments
+comments ||--|| users
 @enduml
 
 ## 【Tag List】

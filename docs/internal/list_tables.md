@@ -7,6 +7,8 @@ tags: ["list"]
 ## tables
 1. [users](tables/users.md) - ユーザー
     1. user_histories - ユーザー履歴
+1. [tasks](tables/tasks.md) - タスク
+    1. [comments](tables/comments.md) - コメント
 1. roles - 権限
 
 ## マイグレーション共通 - common to migration

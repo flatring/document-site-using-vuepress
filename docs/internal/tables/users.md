@@ -9,7 +9,7 @@
 1. `master`
 
 ## 定義 - Definition
-### markdownのtableの場合 
+### markdownのtableの場合
 
 | Physical name | Logical name | Type    | Digit | Not Null | Default value | Description                 |
 | ------------- | ------------ | ------- | ----: | :------: | ------------- | --------------------------- |
@@ -33,11 +33,11 @@
     1. email
 
 ## ユニークキー - Unique key
-1. [table name]_up_01
+1. [table name]_uq_01
     1. email
 
 ## 関連ER図 - Related ER diagram
-1. <GreenBadge text="T.B.D." />
+1. [sample](../er/sample.md)
 
 ## 【Tag List】
 <TagList />
