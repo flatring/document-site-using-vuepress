@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [Unreleased]
 
+## [0.0.4] - 2020-09-10
+### Added
+- simple explanation of Git.
+
 ## [0.0.3] - 2020-09-09
 ### Added
 - simple explanation of Git.

@@ -9,7 +9,7 @@ home: true
 1. [ドキュメント編集手順](./development/document_editing_procedure.md)
 1. 規約
     1. 全般
-    1. markdown
+    1. [markdown](./development/rules/markdown.md)
     1. TypeScript
     1. SQL
 1. GitHub or GitLab 運用手順

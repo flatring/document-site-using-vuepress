@@ -1,6 +1,6 @@
 {
   "name": "document-site-using-vuepress",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "licence": "MIT",
   "description": "Document using Vuepress",
   "scripts": {
@@ -12,13 +12,13 @@
   },
   "devDependencies": {
     "@dovyp/vuepress-plugin-clipboard-copy": "^1.0.0-alpha.7",
-    "@vuepress/plugin-back-to-top": "^1.5.3",
-    "@vuepress/plugin-nprogress": "^1.5.3",
+    "@vuepress/plugin-back-to-top": "^1.5.4",
+    "@vuepress/plugin-nprogress": "^1.5.4",
     "markdown-it-footnote": "^3.0.2",
     "markdown-it-imsize": "^2.0.1",
     "markdown-it-plantuml": "^1.4.1",
     "markdown-it-task-lists": "^2.1.1",
-    "vuepress": "^1.5.3",
-    "vuepress-plugin-zooming": "^1.1.7"
+    "vuepress": "^1.5.4",
+    "vuepress-plugin-zooming": "^1.1.8"
   }
 }
