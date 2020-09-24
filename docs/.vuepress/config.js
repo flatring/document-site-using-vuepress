@@ -28,7 +28,6 @@ module.exports = {
     lineNumbers: true,
     extendMarkdown: md => {
       md.set({ typographer: true }),
-      md.use(require('markdown-it-footnote')),
       md.use(require('markdown-it-imsize'), { autofill: true }),
       md.use(require('markdown-it-plantuml')),
       md.use(require('markdown-it-task-lists'))
