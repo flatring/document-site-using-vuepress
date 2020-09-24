@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [0.0.4] - 2020-09-10
 ### Added
-- simple explanation of Git.
+- simple explanation of markdown.
 
 ## [0.0.3] - 2020-09-09
 ### Added
