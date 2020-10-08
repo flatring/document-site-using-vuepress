@@ -6,9 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [Unreleased]
 
+## [0.0.5] - 2020-10-08
+### Added
+- added guidline backend.
+
 ## [0.0.4] - 2020-09-10
 ### Added
-- simple explanation of Git.
+- simple explanation of markdown.
 
 ## [0.0.3] - 2020-09-09
 ### Added
