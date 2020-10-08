@@ -29,8 +29,8 @@ home: true
     1. 成果物 - Deliverables
         1. <GreenBadge text="T.B.D." />
     1. 成功基準 - Success Criteria
-    :::
         1. <GreenBadge text="T.B.D." />
+    :::
 1. 機能要件とか非機能要件とか
 
 ## 設計 - Design
