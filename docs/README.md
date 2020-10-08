@@ -6,7 +6,10 @@ home: true
 <!-- markdownlint-enable MD041 -->
 
 ## 開発者向け - Development
+::: details 詳細
 1. [ドキュメント編集手順](./development/document_editing_procedure.md)
+1. ガイドライン
+    1. [Backend](development/guidelines/backend.md)
 1. 規約
     1. 全般
     1. [markdown](./development/rules/markdown.md)
@@ -17,6 +20,7 @@ home: true
 1. tools
     1. [Git](./development/tools/Git.md)
     1. [Visual Studio Code](./development/tools/VisualStudioCode.md)(VSCode)
+:::
 
 ## 要件定義 - Requirement definition
 1. ::: details ODSC
@@ -25,8 +29,8 @@ home: true
     1. 成果物 - Deliverables
         1. <GreenBadge text="T.B.D." />
     1. 成功基準 - Success Criteria
-        1. <GreenBadge text="T.B.D." />
     :::
+        1. <GreenBadge text="T.B.D." />
 1. 機能要件とか非機能要件とか
 
 ## 設計 - Design
