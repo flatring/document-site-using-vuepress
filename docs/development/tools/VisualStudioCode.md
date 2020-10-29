@@ -5,6 +5,10 @@
 1. [Download visual Studio Code](https://code.visualstudio.com/download)
 1. Visual Studio Codeを以降 `VSCode` と表記
 
+## 参考
+1. Qiita
+    1. [1分でも早く仕事を終わらせるためにVSCodeにできること](https://qiita.com/EaE/items/4ca1b35396eba682a86f?utm_source=Qiitaニュース&utm_campaign=5d415ebf58-Qiita_newsletter_431_10_07_2020&utm_medium=email&utm_term=0_e44feaa081-5d415ebf58-38585986)
+
 ## おすすめの拡張機能 - Recommended extensions
 1. `Ctrl + Shift + x` で選択可
 

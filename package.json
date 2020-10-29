@@ -12,12 +12,12 @@
   },
   "devDependencies": {
     "@dovyp/vuepress-plugin-clipboard-copy": "^1.0.0-alpha.7",
-    "@vuepress/plugin-back-to-top": "^1.6.0",
-    "@vuepress/plugin-nprogress": "^1.6.0",
+    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "@vuepress/plugin-nprogress": "^1.7.1",
     "markdown-it-imsize": "^2.0.1",
     "markdown-it-plantuml": "^1.4.1",
     "markdown-it-task-lists": "^2.1.1",
-    "vuepress": "^1.6.0",
+    "vuepress": "^1.7.1",
     "vuepress-plugin-zooming": "^1.1.8"
   }
 }

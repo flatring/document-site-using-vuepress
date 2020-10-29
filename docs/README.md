@@ -2,7 +2,7 @@
 home: true
 ---
 <!-- markdownlint-disable MD041 -->
-- sorry. Japanese only.
+- Japanese only.
 <!-- markdownlint-enable MD041 -->
 
 ## 開発者向け - Development
@@ -11,7 +11,7 @@ home: true
 1. ガイドライン
     1. [Backend](development/guidelines/backend.md)
 1. 規約
-    1. 全般
+    1. [全般](./development/rules/general.md)
     1. [markdown](./development/rules/markdown.md)
     1. TypeScript
     1. SQL
