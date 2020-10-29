@@ -60,7 +60,7 @@
     + GetSampleDay.cs
     ```
 
-### `/Backend/Models/Entities`
+### `/Backend/Models/Entities/`
 1. Dapper用。テーブルのフィールドをI/Oするためのクラス。
 1. フィールド定義だけなので名前は単数形とする。
     1. これをArrayで使う変数は複数形になる。
