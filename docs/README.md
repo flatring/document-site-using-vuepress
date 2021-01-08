@@ -49,6 +49,8 @@ home: true
     :::
 1. ユースケース
     1. <GreenBadge text="T.B.D." />
+1. 概念データモデル
+    1. [サンプル](./external/conceptual_data_model/sample.md)
 
 ### 内部 - Internal
 1. ER図
