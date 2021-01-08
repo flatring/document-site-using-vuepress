@@ -14,10 +14,10 @@ skinparam linetype ortho
 legend top left
   凡例
   |= 説明 |= 記号 |
-  | 0 or 1 | <#honeydew> \|o-- |
-  | 1のみ | <#honeydew> \|\|-- |
-  | 0以上 | <#honeydew> }o-- |
-  | 1以上 | <#honeydew> }\|-- |
+  | 0 or 1 | <#honeydew> --o\| |
+  | 1のみ | <#honeydew> --\|\| |
+  | 0以上 | <#honeydew> --o{ |
+  | 1以上 | <#honeydew> --\|{ |
 end legend
 
 entity "users ユーザー" as users {
