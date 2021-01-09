@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [Unreleased]
 
+## [0.0.6] - 2021-01-09
+### Added
+- rest api sample.
+
 ## [0.0.5] - 2020-10-08
 ### Added
 - guidline backend.

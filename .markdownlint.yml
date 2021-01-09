@@ -9,6 +9,7 @@ MD031: false    # コードブロックの最後の空白判定なし
 MD032: false    # リスト前後の空白判定なし
 MD033:          # 指定したhtmlタグ以外は利用禁止
   allowed_elements:
+    - ApiUrl
     - br
     - ColorSample
     - GreenBadge

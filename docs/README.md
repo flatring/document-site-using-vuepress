@@ -56,6 +56,7 @@ home: true
 1. ER図
     1. [サンプル](./internal/er/sample.md)
 1. [テーブル一覧](./internal/list_tables.md)
+1. [API一覧](./internal/list_api.md)
 1. 画面一覧
 
 ## 【Tag List】
