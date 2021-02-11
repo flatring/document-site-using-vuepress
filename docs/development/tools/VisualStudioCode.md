@@ -43,5 +43,5 @@
     <!-- markdownlint-enable MD037 -->
     ```
 
-## 【Tag List】
+## -- Tag List --
 <TagList />

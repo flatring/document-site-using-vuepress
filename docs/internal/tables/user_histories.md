@@ -39,5 +39,5 @@
 ## 関連ER図 - Related ER diagram
 1. <GreenBadge text="T.B.D." />
 
-## 【Tag List】
+## -- Tag List --
 <TagList />

@@ -28,5 +28,5 @@
 ## 関連ER図 - Related ER diagram
 1. [sample](../er/sample.md)
 
-## 【Tag List】
+## -- Tag List --
 <TagList />

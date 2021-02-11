@@ -18,5 +18,5 @@ tags: ["git"]
         1. [yarn](https://yarnpkg.com/lang/ja/)
         1. [Visual Studio Code](tools/VisualStudioCode.md)参照
 
-## 【Tag List】
+## -- Tag List --
 <TagList />

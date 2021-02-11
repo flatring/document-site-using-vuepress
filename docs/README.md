@@ -59,5 +59,5 @@ home: true
 1. [API一覧](./internal/list_api.md)
 1. 画面一覧
 
-## 【Tag List】
+## -- Tag List --
 <TagList />
