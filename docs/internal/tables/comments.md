@@ -10,10 +10,10 @@
 
 ## 定義 - Definition
 
-| Physical name | Logical name | Type   | Digit | Not Null | Default value | Description                 |
-| ------------- | ------------ | ------ | ----: | :------: | ------------- | --------------------------- |
-| id            | id           | int    |     - |   True   |               | Primary key. auto increment |
-| description   | 本文         | string |  1000 |    -     |               |                             |
+|     #     | Physical name | Logical name | Type   | Digit | Not Null | Default value | Description                 |
+| :-------: | ------------- | ------------ | ------ | ----: | :------: | ------------- | --------------------------- |
+| {{ n=1 }} | id            | id           | int    |     - |   True   |               | Primary key. auto increment |
+| {{ ++n }} | description   | 本文         | string |  1000 |    -     |               |                             |
 
 ## インデックス - Index
 1. [table name]_idx_01

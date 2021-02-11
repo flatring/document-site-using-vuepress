@@ -10,17 +10,17 @@
 
 ## 定義 - Definition
 
-| Physical name | Logical name       | Type     | Digit | Not Null | Default value     | Description                     |
-| ------------- | ------------------ | -------- | ----: | :------: | ----------------- | ------------------------------- |
-| id            | id                 | int      |     - |   True   |                   | Primary key. auto increment     |
-| password      | パスワード         | string   |    30 |   True   | `qwerty12345`     | crypt                           |
-| name          | 名前               | string   |   100 |   True   |                   |                                 |
-| email         | Eメール            | string   |   100 |   True   |                   |                                 |
-| gender        | 性別               | tinyint  |     - |   True   |                   | [性別](#性別-gender)            |
-| target_id     | 非履歴テーブルのID | int      |     - |   True   |                   |                                 |
-| is_deleted    | 削除済み           | boolean  |     - |   True   | `false`           | 非履歴を削除したときのみ `true` |
-| updated_at    | 更新日時           | datetime |     - |   True   | current_timestamp | insert時のみセットされる        |
-| updater_id    | 更新者ID           | int      |     - |   True   |                   | user_id                         |
+|     #     | Physical name | Logical name       | Type     | Digit | Not Null | Default value     | Description                     |
+| :-------: | ------------- | ------------------ | -------- | ----: | :------: | ----------------- | ------------------------------- |
+| {{ n=1 }} | id            | id                 | int      |     - |   True   |                   | Primary key. auto increment     |
+| {{ ++n }} | password      | パスワード         | string   |    30 |   True   | `qwerty12345`     | crypt                           |
+| {{ ++n }} | name          | 名前               | string   |   100 |   True   |                   |                                 |
+| {{ ++n }} | email         | Eメール            | string   |   100 |   True   |                   |                                 |
+| {{ ++n }} | gender        | 性別               | tinyint  |     - |   True   |                   | [性別](#性別-gender)            |
+| {{ ++n }} | target_id     | 非履歴テーブルのID | int      |     - |   True   |                   |                                 |
+| {{ ++n }} | is_deleted    | 削除済み           | boolean  |     - |   True   | `false`           | 非履歴を削除したときのみ `true` |
+| {{ ++n }} | updated_at    | 更新日時           | datetime |     - |   True   | current_timestamp | insert時のみセットされる        |
+| {{ ++n }} | updater_id    | 更新者ID           | int      |     - |   True   |                   | user_id                         |
 
 ### 性別 - gender
 - `0`: 男性

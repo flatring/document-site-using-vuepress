@@ -1,6 +1,6 @@
 {
   "name": "document-site-using-vuepress",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "licence": "MIT",
   "description": "Document using Vuepress",
   "scripts": {
