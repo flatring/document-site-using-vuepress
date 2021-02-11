@@ -61,5 +61,5 @@ git config -l global | grep core.ignorecase
     git rm --cached sample.md
     ```
 
-## 【Tag List】
+## -- Tag List --
 <TagList />

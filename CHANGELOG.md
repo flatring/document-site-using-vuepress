@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [Unreleased]
 
+## [0.0.7] - 2021-02-11
+### Security
+- CVE-2020-7788
+    - <https://github.com/advisories/GHSA-qqgx-2p2h-9c37>
+
+### Changed
+- datamodel sample.
+
 ## [0.0.6] - 2021-01-09
 ### Added
 - rest api sample.

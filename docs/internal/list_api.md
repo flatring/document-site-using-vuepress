@@ -13,5 +13,5 @@ tags: ["list"]
 1. items - 商品
 1. comments - コメント
 
-## 【Tag List】
+## -- Tag List --
 <TagList />

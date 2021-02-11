@@ -32,5 +32,5 @@ tags: ["list"]
 | updater_id    | 更新者ID           | int      |     - |   True   |                   | user_id                         |
 
 
-## 【Tag List】
+## -- Tag List --
 <TagList />

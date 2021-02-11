@@ -45,5 +45,5 @@ tasks_comments }|--|| comments
 comments ||--|| users
 @enduml
 
-## 【Tag List】
+## -- Tag List --
 <TagList />
