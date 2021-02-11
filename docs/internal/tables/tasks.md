@@ -10,13 +10,13 @@
 
 ## 定義 - Definition
 
-| Physical name | Logical name | Type     | Digit | Not Null | Default value | Description                 |
-| ------------- | ------------ | -------- | ----: | :------: | ------------- | --------------------------- |
-| id            | id           | int      |     - |   True   |               | Primary key. auto increment |
-| title         | タイトル     | string   |   250 |   True   |               |                             |
-| description   | 本文         | string   |  1000 |    -     |               |                             |
-| due_date      | 期限日       | datetime |     - |    -     |               |                             |
-| is_notified   | 通知あり     | boolean  |     - |    -     |               | True=通知あり               |
+|     #     | Physical name | Logical name | Type     | Digit | Not Null | Default value | Description                 |
+| :-------: | ------------- | ------------ | -------- | ----: | :------: | ------------- | --------------------------- |
+| {{ n=1 }} | id            | id           | int      |     - |   True   |               | Primary key. auto increment |
+| {{ ++n }} | title         | タイトル     | string   |   250 |   True   |               |                             |
+| {{ ++n }} | description   | 本文         | string   |  1000 |    -     |               |                             |
+| {{ ++n }} | due_date      | 期限日       | datetime |     - |    -     |               |                             |
+| {{ ++n }} | is_notified   | 通知あり     | boolean  |     - |    -     |               | True=通知あり               |
 
 ## インデックス - Index
 1. [table name]_idx_01

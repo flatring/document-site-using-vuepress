@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [Unreleased]
 
+## [0.0.8] - 2021-02-11
+### Changed
+- Add auto-numbering to the table.
+- Adjust table padding.
+
 ## [0.0.7] - 2021-02-11
 ### Security
 - CVE-2020-7788
