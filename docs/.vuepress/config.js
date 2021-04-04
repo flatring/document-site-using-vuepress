@@ -1,6 +1,10 @@
+const { title, description } = require('../../package.json')
+
 module.exports = {
   base: '/document-site-using-vuepress/',
   dest: 'public',
+  title: title,
+  description: description,
   head: [
     [ 'link', { rel: 'icon', type: 'image/png', href: '/document.png' } ],
     [ 'link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP' } ],
@@ -8,13 +12,18 @@ module.exports = {
     [ 'meta', { name: "robots", content: "noindex, follow" } ],
   ],
   themeConfig: {
+    repo:'',
+    docsDir: '',
+    displayAllheaders: true,
+    editLinks: false,
+    editLinkText: '',
+    lastUpdated: '最終更新日',
     nav: [
       { text: 'GitHub', link: 'https://github.com/flatring/document-site-using-vuepress' }
     ],
+    servers: ['http://localhost:8082'],
     sidebar: 'auto',
     sidebarDepth: 2, // max=2
-    displayAllheaders: true,
-    lastUpdated: '最終更新日',
   },
   locales: {
     // default
@@ -47,5 +56,11 @@ module.exports = {
         }
       }
     ],
-  ]
+  ],
+  configureWebpack: (config) => {
+    config.module.rules.push({
+      test: /\.yaml$/,
+      use: 'js-yaml-loader'
+    })
+  }
 }
