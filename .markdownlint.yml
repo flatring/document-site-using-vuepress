@@ -13,6 +13,7 @@ MD033:          # 指定したhtmlタグ以外は利用禁止
     - br
     - ColorSample
     - GreenBadge
+    - OpenApi
     - span
     - TagList
 MD038: false    # コードブロック内にスペース可

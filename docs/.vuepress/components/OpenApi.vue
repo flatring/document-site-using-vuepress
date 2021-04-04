@@ -6,7 +6,7 @@
 // Reference: https://github.com/amplia-iiot/vuepress-openapi
 import SwaggerUI from 'swagger-ui'
 import 'swagger-ui/dist/swagger-ui.css'
-import { resolve } from 'path'
+// import { resolve } from 'path'
 
 export default {
   name: 'OpenApi',
@@ -21,14 +21,9 @@ export default {
       immediate: true,
       handler () {
         const { servers = [] } = this.$themeConfig
-        // console.log('this.page=')
-        // console.log(this.page)
         let paths = this.page.regularPath.replace('.html', '/').split('/').filter((item) => !!item)
         // const fullPath =  resolve(__dirname, `../../${paths.join('/')}/swagger.${this.json ? 'json' : 'yaml'}`)
         const fullPath =  `../../${paths.join('/')}/swagger.${this.json ? 'json' : 'yaml'}`
-        console.log('fullPath=')
-        console.log(fullPath)
-        // import(`../../${paths.join('/')}/swagger.${this.json ? 'json' : 'yaml'}`).then(spec => {
         import(fullPath).then(spec => {
           SwaggerUI({
             spec: { ...spec, servers: servers.map(url => ({ url })) }
