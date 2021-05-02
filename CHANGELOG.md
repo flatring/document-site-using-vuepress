@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 
 ## [Unreleased]
 
+## [0.0.9] - 2021-05-02
+### Added
+- swagger preview.
+
 ## [0.0.8] - 2021-02-11
 ### Changed
 - Add auto-numbering to the table.
