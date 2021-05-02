@@ -6,7 +6,6 @@
 // Reference: https://github.com/amplia-iiot/vuepress-openapi
 import SwaggerUI from 'swagger-ui'
 import 'swagger-ui/dist/swagger-ui.css'
-// import { resolve } from 'path'
 
 export default {
   name: 'OpenApi',
