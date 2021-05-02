@@ -1,5 +1,6 @@
 ---
 tags: ['API']
+openapi: yaml
 ---
 # petstore
 - [index](/)に戻る

@@ -1,5 +1,6 @@
 ---
 tags: ['API']
+openapi: json
 ---
 # petstore/expanded
 - [index](/)に戻る

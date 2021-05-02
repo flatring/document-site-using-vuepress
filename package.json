@@ -8,7 +8,7 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "swagger-ui": "^3.46.0"
+    "swagger-ui": "^3.48.0"
   },
   "devDependencies": {
     "@dovyp/vuepress-plugin-clipboard-copy": "^1.0.0-alpha.7",

@@ -1,4 +1,4 @@
-<template lang='html'>
+<template>
   <div class='open-api-container'></div>
 </template>
 
@@ -22,21 +22,25 @@ export default {
       handler () {
         const { servers = [] } = this.$themeConfig
         let paths = this.page.regularPath.replace('.html', '/').split('/').filter((item) => !!item)
-        // const fullPath =  resolve(__dirname, `../../${paths.join('/')}/swagger.${this.json ? 'json' : 'yaml'}`)
-        const fullPath =  `../../${paths.join('/')}/swagger.${this.json ? 'json' : 'yaml'}`
-        import(fullPath).then(spec => {
-          SwaggerUI({
-            spec: { ...spec, servers: servers.map(url => ({ url })) }
+        const relativePath =  `../../${paths.join('/')}/swagger.${this.yaml ? 'yaml' : 'json'}`
+        // import(relativePath) ToDo 何故か変数に入れてimportすると「Error: Cannot find module」になる js-yaml-loaderのせい？
+        import(`../../${paths.join('/')}/swagger.${this.yaml ? 'yaml' : 'json'}`)
+          .then(spec => {
+            SwaggerUI({
+              spec: { ...spec, servers: servers.map(url => ({ url })) },
+              domNode: this.$el
+            })
           })
-        }).catch(() => {
-          this.$el.innerHTML = `== swagger import error ==<br>${fullPath}`
-        })
+          .catch((e) => {
+            console.log(e)
+            this.$el.innerHTML = `== swagger import error ==<br>${relativePath}`
+          })
       }
     }
   },
   computed: {
     yaml () {
-      return this.$frontmatter.openapi === 'json'
+      return this.$frontmatter.openapi === 'yaml'
     }
   }
 }
