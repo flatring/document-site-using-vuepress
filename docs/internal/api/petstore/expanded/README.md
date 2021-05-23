@@ -1,13 +1,12 @@
 ---
 tags: ['API']
-openapi: json
 ---
 # petstore/expanded
 - [index](/)に戻る
 
 ## シーケンス図
 
-<OpenApi :page='$page' />
+<OpenApi />
 
 ## -- Tag List --
 <TagList />
