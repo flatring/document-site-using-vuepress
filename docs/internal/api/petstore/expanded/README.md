@@ -6,7 +6,7 @@ tags: ['API']
 
 ## シーケンス図
 
-<OpenApi :page='$page' />
+<OpenApi />
 
 ## -- Tag List --
 <TagList />

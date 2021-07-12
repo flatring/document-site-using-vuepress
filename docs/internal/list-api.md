@@ -11,7 +11,6 @@ actionLink: /petstore/
 1. endpoint単位。
 :::
 
-1. [event](../event/README.md)
 1. [petstore](api/petstore/README.md)
 1. petstore/[expanded](api/petstore/expanded/README.md)
 1. [users](api/users.md) - ユーザー

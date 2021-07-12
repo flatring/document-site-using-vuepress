@@ -4,9 +4,9 @@ tags: ['API']
 # petstore
 - [index](/)に戻る
 
-## シーケンス図
+## API
 
-<OpenApi :page='$page' />
+<OpenApi :page='$page' fileRelativePath='swagger.yaml' />
 
 ## -- Tag List --
 <TagList />

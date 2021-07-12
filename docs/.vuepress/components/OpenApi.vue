@@ -1,42 +1,67 @@
-<template lang='html'>
-  <div class='open-api-container'></div>
+<template>
+  <div class="open-api-container">
+    <ul class="errors">
+      <li v-show="state.isValid">{{ state.message }}</li>
+    </ul>
+    <slot />
+  </div>
 </template>
 
 <script>
 // Reference: https://github.com/amplia-iiot/vuepress-openapi
 import SwaggerUI from 'swagger-ui'
 import 'swagger-ui/dist/swagger-ui.css'
-// import { resolve } from 'path'
 
 export default {
-  name: 'OpenApi',
+  data () {
+    return {
+      state: {
+        isValid: false,
+        message: ''
+      }
+    }
+  },
   props: {
     page: {
       type: Object,
       required: true
+    },
+    fileRelativePath: {
+      type: String,
+      default: 'swagger.yaml'
     }
   },
+  // beforeMount () {
+  // mounted () {
+    // console.log('fullPath=', fullPath)
+    // console.log('this.page=', this.$page)
   watch: {
     page: {
       immediate: true,
       handler () {
+        console.log('this.fileRelativePath=', this.fileRelativePath)
+        const reg = /^(\/?\w)*\.(json|yaml|yml)$/
+        this.state.isValid = !reg.test(this.fileRelativePath)
+        if (this.state.isValid) {
+          this.state.message = `validation error in fileRelativePath '${this.fileRelativePath}'.`
+          return
+        }
+
         const { servers = [] } = this.$themeConfig
-        let paths = this.page.regularPath.replace('.html', '/').split('/').filter((item) => !!item)
-        // const fullPath =  resolve(__dirname, `../../${paths.join('/')}/swagger.${this.json ? 'json' : 'yaml'}`)
-        const fullPath =  `../../${paths.join('/')}/swagger.${this.json ? 'json' : 'yaml'}`
-        import(fullPath).then(spec => {
-          SwaggerUI({
-            spec: { ...spec, servers: servers.map(url => ({ url })) }
+        let paths = this.$page.regularPath.replace('.html', '/').split('/').filter((item) => !!item)
+        paths.push(this.fileRelativePath)
+        import(`../../${paths.join('/')}`)
+          .then(spec => {
+            SwaggerUI({
+              spec: { ...spec, servers: servers.map(url => ({ url })) },
+              domNode: this.$el
+            })
           })
-        }).catch(() => {
-          this.$el.innerHTML = `== swagger import error ==<br>${fullPath}`
-        })
+          .catch((err) => {
+            this.state.isValid = true
+            this.state.message = err
+          })
       }
-    }
-  },
-  computed: {
-    yaml () {
-      return this.$frontmatter.openapi === 'json'
     }
   }
 }
@@ -45,5 +70,9 @@ export default {
 <style scope>
 .open-api-container pre {
   background-color: rgb(125, 132, 146)
+}
+
+.errors {
+  color: #af0d0d
 }
 </style>

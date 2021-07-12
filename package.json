@@ -1,6 +1,6 @@
 {
   "name": "document-site-using-vuepress",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "licence": "MIT",
   "description": "Document using Vuepress",
   "scripts": {
@@ -8,7 +8,7 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "swagger-ui": "^3.46.0"
+    "swagger-ui": "^3.48.0"
   },
   "devDependencies": {
     "@dovyp/vuepress-plugin-clipboard-copy": "^1.0.0-alpha.7",
