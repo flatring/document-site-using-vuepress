@@ -22,37 +22,47 @@ export default {
     }
   },
   props: {
+    page: {
+      type: Object,
+      required: true
+    },
     fileRelativePath: {
       type: String,
       default: 'swagger.yaml'
     }
   },
   // beforeMount () {
-  mounted () {
-    const { servers = [] } = this.$themeConfig
+  // mounted () {
     // console.log('fullPath=', fullPath)
     // console.log('this.page=', this.$page)
-    console.log('this.fileRelativePath=', this.fileRelativePath)
-    const reg = /^(\/?\w)*\.(json|yaml|yml)$/
-    this.state.isValid = !reg.test(this.fileRelativePath)
-    if (this.state.isValid) {
-      this.state.message = `validation error in fileRelativePath '${this.fileRelativePath}'.`
-      return
-    }
+  watch: {
+    page: {
+      immediate: true,
+      handler () {
+        console.log('this.fileRelativePath=', this.fileRelativePath)
+        const reg = /^(\/?\w)*\.(json|yaml|yml)$/
+        this.state.isValid = !reg.test(this.fileRelativePath)
+        if (this.state.isValid) {
+          this.state.message = `validation error in fileRelativePath '${this.fileRelativePath}'.`
+          return
+        }
 
-    let paths = this.$page.regularPath.replace('.html', '/').split('/').filter((item) => !!item)
-    paths.push(this.fileRelativePath)
-    import(`../../${paths.join('/')}`)
-      .then(spec => {
-        SwaggerUI({
-          spec: { ...spec, servers: servers.map(url => ({ url })) },
-          domNode: this.$el
-        })
-      })
-      .catch((err) => {
-        this.state.isValid = true
-        this.state.message = err
-      })
+        const { servers = [] } = this.$themeConfig
+        let paths = this.$page.regularPath.replace('.html', '/').split('/').filter((item) => !!item)
+        paths.push(this.fileRelativePath)
+        import(`../../${paths.join('/')}`)
+          .then(spec => {
+            SwaggerUI({
+              spec: { ...spec, servers: servers.map(url => ({ url })) },
+              domNode: this.$el
+            })
+          })
+          .catch((err) => {
+            this.state.isValid = true
+            this.state.message = err
+          })
+      }
+    }
   }
 }
 </script>

@@ -6,7 +6,7 @@ tags: ['API']
 
 ## API
 
-<OpenApi fileRelativePath='swagger.yaml' />
+<OpenApi :page='$page' fileRelativePath='swagger.yaml' />
 
 ## -- Tag List --
 <TagList />
